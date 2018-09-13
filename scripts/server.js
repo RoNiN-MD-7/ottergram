@@ -38,7 +38,7 @@ const server = http.createServer(function(request, response) {
     const ico = fs.readFileSync('./favicon.ico');
     response.end(ico);
   } else if (request.url == '/scripts/main.js') {
-    const ico = fs.readFileSync('./scripts/main.js');
+    const ico = fs.readFileSync('./scripts/main.js', 'utf-8');
     response.end(ico);
   } else {
     const html = fs.readFileSync('./index.html', 'utf-8');
