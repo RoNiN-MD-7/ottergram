@@ -136,7 +136,7 @@ a {
   max-width: 80%;
 }
 
-@media all and (orientation: landscape) and (max-height:480px) {
+@media all and (orientation: landscape) and (min-width: 480px) {
   .main-content {
     flex-direction: row;
     overflow: hidden;
